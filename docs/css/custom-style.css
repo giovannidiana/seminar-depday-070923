@@ -37,8 +37,9 @@ div.center-image-container {
 }
 
 .center-image-container > img {
-    width:auto;
-    height:100%;
+    object-fit:contain;
+    max-width:90%;
+    max-height:90%;
     margin:20px 20px;
 }
 
