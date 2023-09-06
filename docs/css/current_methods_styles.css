@@ -1,0 +1,39 @@
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);              
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0%);              
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);              
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0%);              
+        opacity: 1;
+    }
+}
+
+div.descrLeft {
+    animation-name: slideInFromLeft;
+    animation-duration: 1s;
+}
+
+div.descrRight {
+    animation-name: slideInFromRight;
+    animation-duration: 1s;
+}
+
+div.divsvg1 {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    animation-name: slideInFromLeft;
+}
