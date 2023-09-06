@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1368" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>S2A meeting</title>
+    
+    <meta name="S2A" content="" />
+    <meta name="author" content="Giovanni Diana" />
+    <meta data-pageprev=summary data-pagenext=acknowledgements />
+
+    <!-- Load d3.js -->
+    <script src = "https://d3js.org/d3.v6.min.js"></script>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <!-- Add mathjax support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+    <link href="../css/custom-style.css" rel="stylesheet" /> 
+    <!-- Add Mathjs -->
+    <script src = "https://unpkg.com/mathjs@7.6.0/dist/math.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="intro" class="step">
+        <h1> Future directions </h1>
+        <div class=hidden style="display:flex;flex-wrap:wrap">
+            <div data-vi=1 style="padding:5px;width:40%;border:solid;stroke:grey;border-radius:20px">
+                <h2 style="font-size:20px"> Machine-learning/Bayesian <br> mixed inference strategies</h2>
+                <ol>
+                    <li> Monte Carlo samplers and Neural Networks </li>
+                    <li> Develop message-passing Sequential Monte Carlo </li>
+                    <li> Strategies for SMC parallelization </li>
+                </ol>
+            </div>
+        
+            <div data-vi=2 style="margin:10px;flex:1;auto;border:solid;stroke:grey;border-radius:20px">
+                <h2 style="font-size:20px"> Functional clustering of gene-expression data</h2>
+                <img style="padding:5px;display:block;width:90%" src=../figures/png/BM_project.png ></img>
+            </div>
+            
+            <div data-vi=3 style="margin:10px;border:solid;stroke:grey;border-radius:20px">
+                <h2 style="font-size:20px"> Multi-scale neural circuit models</h2>
+                <img style="padding:5px;display:block;width:80%" src=../figures/png/cerebellum2.png ></img>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/key_bind.js"> </script>
+</body>
+</html>
+
+

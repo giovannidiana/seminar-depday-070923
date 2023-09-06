@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1368" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Departmental day</title>
+    
+    <meta name="Departmental day" content="" />
+    <meta name="author" content="Giovanni Diana" />
+    <meta data-pagenext=calcium_imaging />
+
+    <!-- Load d3.js -->
+    <script src = "https://d3js.org/d3.v6.min.js"></script>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <!-- Add mathjax support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+    <script src = "https://unpkg.com/mathjs@7.6.0/dist/math.min.js"></script>
+    <script src = "../js/funny_notimer.js"></script>
+    <link href="../css/custom-style.css" rel="stylesheet" /> 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class=step id="title">
+        <h1 class=front> 
+            High frequency spike inference<br>
+            with particle Gibbs sampling </h1>
+        <div class="svgholder">
+            <svg style="display:block" id='svg1' width=100% height=100 preserveAspectRatio="none" viewbox="0 0 1000 20"></svg>
+        </div>
+        <div>
+            <h3 class=front> Giovanni Diana </h3>
+            <p class=front> Synapse and Circuit Dynamics, Institut Pasteur </p>
+    </div>
+
+    <div style="width:100%; justify-content:center; text-align:center;">
+        <h3> Neuroscience Departmental Day, 7 Sep 2023 </h3>
+    </div>
+
+    <script> display_trace() </script>
+    <script src="../js/key_bind.js"> </script>
+</body>
+</html>
+
+

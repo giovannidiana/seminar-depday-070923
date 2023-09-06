@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1368" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Departmental day</title>
+    
+    <meta name="Departmental day" content="" />
+    <meta name="author" content="Giovanni Diana" />
+    <meta data-pageprev=index data-pagenext=calcium_trace />
+
+    <!-- Load d3.js -->
+    <script src = "https://d3js.org/d3.v6.min.js"></script>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <!-- Add mathjax support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+    <link href="../css/custom-style.css" rel="stylesheet" /> 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="intro" class="step">
+        <h1 class=title> Calcium imaging </h1>
+        <div style="display:flex">
+            <div style="width:50%"> 
+                <img class=div1 src=../figures/png/imaging_setup.png width=100%> </img>
+                <div class=div1 style="text-align:right; font-size:0.8em"> (Donzis et al, 2018) </div>
+            </div>
+            <div class=hidden style="width:20%;margin:3em;text-align:right">
+                <iframe data-vi=1 
+                        width="560" 
+                        height="315"
+                        src="https://www.youtube.com/embed/lppAwkek6DI?&autoplay=1"
+                        frameborder="0"
+                        allowfullscreen
+                        allow="accelerometer;autoplay">
+                </iframe>
+            </div>
+        </div>
+
+
+        <div class=hidden style="height:10px;width:70%">
+            <div data-vi=2 style="margin-left:2em;padding:1em;border: solid red; font-size:20pt;border-radius:20px"> Extract spike times from fluorescence time series </div>
+        </div>
+    </div>
+    <script src="../js/key_bind.js"> </script>
+</body>
+</html>
+
+

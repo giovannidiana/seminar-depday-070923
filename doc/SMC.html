@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1368" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Group meeting</title>
+    
+    <meta name="Group meeting" content="" />
+    <meta name="author" content="Giovanni Diana" />
+    <meta data-pageprev=state_space_mod data-pagenext=PGAS1 />
+
+    <!-- Load d3.js -->
+    <script src = "https://d3js.org/d3.v6.min.js"></script>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <!-- Add mathjax support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+    <link href="../css/custom-style.css" rel="stylesheet" /> 
+    <!-- Add Mathjs -->
+    <script src = "https://unpkg.com/mathjs@7.6.0/dist/math.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="intro" class="step">
+        <div style="width:100%;display:flex">
+            <div style="width:40%">
+                <h1 style="margin-bottom:20px"> Sequential Monte Carlo </h1>
+                <p> target distribution: \(P(X_{1:T}|F_{1:T},\theta)\) </p>
+                <button id=btn_start onclick="start()"> Start </button>
+                <button id=btn_advance onclick="resample()"> Resample </button>
+                <button id=btn_evolve onclick="evolve()"> Evolution </button>
+
+                <ol id=ol1> </ol>
+            </div>
+
+            <div style="width:60%">
+                <svg id=svg1 width=100% style="display:block" height=800> </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/s9-1_PF.js"> </script>
+    <script src="../js/key_bind.js"> </script>
+</body>
+</html>
+
+

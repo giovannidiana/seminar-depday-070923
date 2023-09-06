@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1368" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Departmental day</title>
+    
+    <meta name="Departmental day" content="" />
+    <meta name="author" content="Giovanni Diana" />
+    <meta data-pageprev=statistical_inference data-pagenext=PGAS1 />
+
+    <!-- Load d3.js -->
+    <script src = "https://d3js.org/d3.v6.min.js"></script>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <!-- Add mathjax support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+    <link href="../css/custom-style.css" rel="stylesheet" /> 
+    <!-- Add Mathjs -->
+    <script src = "https://unpkg.com/mathjs@7.6.0/dist/math.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="intro" class="step">
+        <h1> Modeling bursting activity and baseline modulation </h1>
+        <div style="display:flex">
+            <div style="width:40%">
+                <img width=100% src=../figures/png/panelA_mod.png> </img>
+                <p id=calcium_eq style="display:none;font-size:26px">
+                $$c_{t} = \gamma c_{t-1}+\omega c_{t-2} +As_t$$
+                </p>
+            </div>
+
+            <div style="width:60%"> 
+                <div id=plot> </div>
+                <button id=btn_burst onclick="update_burst()"> bursting state </button>
+                <button id=btn_spikes onclick="update_spikes()"> add spikes </button>
+                <button id=btn_baseline onclick="update_baseline()"> baseline </button>
+                <button id=btn_fluorescence onclick="update_calcium()"> fluorescence </button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+    <script src="../js/s7-1_animate_plot.js"> </script>
+        <script> setup_trace() </script>
+    <script src="../js/key_bind.js"> </script>
+</body>
+</html>
+
+

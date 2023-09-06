@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1368" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Departmental day</title>
+    
+    <meta name="Departmental day" content="" />
+    <meta name="author" content="Giovanni Diana" />
+    <meta data-pagenext=model_based data-pageprev=calcium_trace />
+
+    <!-- Load d3.js -->
+    <script src = "https://d3js.org/d3.v6.min.js"></script>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <!-- Add mathjax support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+    <link href="../css/custom-style.css" rel="stylesheet" /> 
+    <link href="../css/current_methods_styles.css" rel="stylesheet" /> 
+    <!-- Add Mathjs -->
+    <script src = "https://unpkg.com/mathjs@7.6.0/dist/math.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="intro" class="step">
+        <h1> Current methodologies </h1>
+        <div class=divsvg1>
+            <svg id=svg1 style="display:inline" width=1440 height=400> </svg>
+        </div>
+        <hr width=100%>
+
+        <div style="width:100%;display:flex;"> 
+
+            <div style="width:55%;display:flex;flex-direction:row-reverse">
+                <div class=descrLeft>
+                    <ul> 
+                        <li> Unsupervised </li>
+                        <li> Testing mechanistic hypotheses </li>
+                        <li> Model comparison </li>
+                        <li> Biologically relevant parameters </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width:45%;display:flex">
+                <div class=descrRight style="width:70%">
+                    <ul> 
+                        <li> Supervised </li>
+                        <li> Require large training datasets </li>
+                        <li> Rely on the ability to generalize to new data </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/s5-1_svg.js"> </script>
+
+    <script src="../js/key_bind.js"> </script>
+</body>
+</html>
+
+
