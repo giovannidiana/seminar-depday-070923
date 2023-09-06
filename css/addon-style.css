@@ -1,0 +1,47 @@
+.ack > p {
+    margin: 0 10px;
+    padding:0
+}
+
+#ol_future p, span{
+    font-size: 12pt;
+    margin-top:0
+}
+
+#ol_future img{
+    height:110px;
+    margin-bottom:0;
+    display:inline
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);              
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0%);              
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);              
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0%);              
+        opacity: 1;
+    }
+}
+
+div.descrLeft {
+    animation-name: slideInFromLeft;
+    animation-duration: 1s;
+}
+
+div.descrRight {
+    animation-name: slideInFromRight;
+    animation-duration: 1s;
+}
