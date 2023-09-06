@@ -69,6 +69,10 @@ p,h1,h2 {
     padding: 10px 10px;
 }
 
+.ack p {
+    margin: 0;
+}
+
 li {
     margin: 10px 30px;
 }
