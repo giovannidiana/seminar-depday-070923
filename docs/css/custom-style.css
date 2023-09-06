@@ -73,6 +73,10 @@ p,h1,h2 {
     margin: 0;
 }
 
+h2.ack {
+    margin:10px 0;
+}
+
 li {
     margin: 10px 30px;
 }
